@@ -14,7 +14,7 @@ from .coordinator import Pulse8DataUpdateCoordinator
 
 _LOGGER = logging.getLogger(__name__)
 
-PLATFORMS: list[Platform] = [Platform.MEDIA_PLAYER, Platform.SELECT]
+PLATFORMS: list[Platform] = [Platform.MEDIA_PLAYER]
 
 type Pulse8ConfigEntry = ConfigEntry[Pulse8DataUpdateCoordinator]
 
