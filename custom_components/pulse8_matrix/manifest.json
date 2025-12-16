@@ -1,7 +1,7 @@
 {
   "domain": "pulse8_matrix",
   "name": "Pulse8 HDBaseT Matrix",
-  "version" : "0.0.1"
+  "version" : "0.0.1",
   "codeowners": [
     "@foxy82"
   ],
