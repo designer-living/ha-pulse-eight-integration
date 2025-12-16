@@ -24,8 +24,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: Pulse8ConfigEntry) -> bo
     coordinator = Pulse8DataUpdateCoordinator(
         hass,
         host=entry.data[CONF_HOST],
-        port=entry.data.get(CONF_PORT, 80),
-        poll_interval=entry.data.get(CONF_POLL_INTERVAL, 30),
+        port=entry.data.get(CONF_PORT, DEFAULT_PORT),
+        poll_interval=entry.data.get(CONF_POLL_INTERVAL, DEFAULT_POLL_INTERVAL),
     )
 
     try:
