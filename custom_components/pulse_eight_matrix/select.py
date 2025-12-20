@@ -121,5 +121,5 @@ class PulseEightMatrixOutputSelect(SelectEntity):
         try:
             await self._client.set_port(input_port.bay, self._output.bay)
             self.async_write_ha_state()
-        except Exception as err:
+        except (PulseEightAPIError, PulseEightConnectionError) as err:
             _LOGGER.error("Failed to set source: %s", err)
