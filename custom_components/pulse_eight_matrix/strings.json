@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Pulse Eight Matrix",
+        "description": "Enter the connection details for your Pulse Eight HDBaseT Matrix.",
+        "data": {
+          "host": "IP Address",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the matrix. Please check the IP address and ensure the device is powered on.",
+      "unknown": "An unexpected error occurred. Please try again."
+    },
+    "abort": {
+      "already_configured": "This matrix is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Pulse Eight Matrix Options",
+        "description": "Configure polling interval for state updates.",
+        "data": {
+          "poll_interval": "Poll Interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "input_source": {
+        "name": "Input Source"
+      }
+    }
+  }
+}
