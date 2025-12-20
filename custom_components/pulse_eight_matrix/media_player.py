@@ -172,5 +172,5 @@ class PulseEightMatrixOutput(MediaPlayerEntity):
             self._current_source = source
             self._state = MediaPlayerState.ON
             self.async_write_ha_state()
-        except (Pulse8APIError, Pulse8ConnectionError) as err:
+        except (PulseEightAPIError, PulseEightConnectionError) as err:
             _LOGGER.error("Error setting source for %s: %s", self.name, err)
