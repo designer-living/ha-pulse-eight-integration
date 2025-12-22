@@ -5,7 +5,7 @@ import logging
 from typing import Any
 
 from pulse_eight_matrix_client import CachingPulseEightMatrixClient
-from pulse_eight_matrix_client.exceptions import PulseEightConnectionError
+from pulse_eight_matrix_client.exceptions import PulseEightConnectionError, PulseEightAPIError
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_PORT, Platform
